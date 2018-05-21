@@ -54,11 +54,13 @@ renderElements = () => (
     if (!window.Intl) {
       require.ensure([
         'intl',
-        'intl/locale-data/jsonp/'+this.state.locale.code+'.js'
+        'intl/locale-data/jsonp/nb.js',
+        'intl/locale-data/jsonp/en.js'
       ], 
       (require) => {
         require('intl');
-        require('intl/locale-data/jsonp/'+this.state.locale.code+'.js');
+        require('intl/locale-data/jsonp/nb.js');
+        require('intl/locale-data/jsonp/en.js');
         return this.renderElements()
       });
     } else {
