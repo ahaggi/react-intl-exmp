@@ -16,7 +16,7 @@ class App extends Component {
     addLocaleData(require('react-intl/locale-data/nb'));
   }
 
-renderElements = () => (
+renderElements = () => {return(
   <IntlProvider key={this.state.locale.code} locale={this.state.locale.code} messages={this.state.locale.messages}>
 
     <div className="App">
@@ -44,7 +44,7 @@ renderElements = () => (
     </div>
   </IntlProvider >
 
-);
+);}
 
   render() {
     console.log(nbBundle)
