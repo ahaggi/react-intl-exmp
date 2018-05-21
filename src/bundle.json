@@ -1,0 +1,20 @@
+{
+"nbBundle":{
+    "code": "nb",
+    "country": "no",
+    "messages": {
+        "app.title": "Octaos",
+        "app.heading": "Reklamasjon",
+        "app.language": "Språk"}
+}
+,
+
+"enBundle":{
+    "code": "en",
+    "country": "usa",
+    "messages": {
+        "app.title": "Octaos",
+        "app.heading": "reclaimation",
+        "app.language": "Lang"}
+}
+}
