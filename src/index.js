@@ -5,5 +5,21 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+if (!window.Intl) {
+    require.ensure([
+      'intl',
+      'intl/locale-data/jsonp/nb.js',
+      'intl/locale-data/jsonp/en.js'
+    ],
+      (require) => {
+        require('intl');
+        require('intl/locale-data/jsonp/nb.js');
+        require('intl/locale-data/jsonp/en.js');
+        ReactDOM.render(<App />, document.getElementById('root'));
+    });
+  } else {
+    ReactDOM.render(<App />, document.getElementById('root'));
+}
+
+
 
