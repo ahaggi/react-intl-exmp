@@ -1,4 +1,3 @@
-import 'intl';
 import React, { Component } from 'react';
 import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl';
 import { nbBundle, enBundle } from './bundle.json'
