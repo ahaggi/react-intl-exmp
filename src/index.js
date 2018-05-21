@@ -6,6 +6,7 @@ import App from './App';
 
 
 if (!window.Intl) {
+  console.log('aaaaaaaaaaaaa')
     require.ensure([
       'intl',
       'intl/locale-data/jsonp/nb.js',
@@ -15,6 +16,7 @@ if (!window.Intl) {
         require('intl');
         require('intl/locale-data/jsonp/nb.js');
         require('intl/locale-data/jsonp/en.js');
+
         ReactDOM.render(<App />, document.getElementById('root'));
     });
   } else {
